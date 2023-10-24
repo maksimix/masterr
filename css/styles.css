@@ -1,0 +1,169 @@
+
+html {
+    box-sizing: border-box;
+   
+}
+
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+
+@media (max-width: 375px) {
+    main{
+        display: none;
+        opacity: 1;
+        transition: opacity 2s, display 2s;
+    }
+    body {
+      
+      font-size: 16px;
+      font-family:  Montserrat;
+     
+      font-weight: 300;
+      line-height: normal;
+    }
+    .first__page__logo{
+       
+        background-color: rgba(217, 217, 217, 0.30);
+        display: flex;
+        justify-content: center;    
+        height: 100vh; 
+        width: 100%;
+        align-items: center;
+        opacity: 1;
+        transition: opacity 1s;
+       
+        
+        
+    }
+    .logo__img,
+    .logo__text {
+      opacity: 0; /* Начальное значение - элементы невидимы */
+    }
+    .logo__text{
+        font-family: Montserrat;
+        font-size: 32px;
+        line-height: normal;
+        text-align: center;
+        width: 142px;
+        height: 78px;
+        animation: fadeInText 2s ease forwards;
+        animation-delay: 0.5s; /* Задержка в полсекунды после анимации изображения */
+    }
+    .hidden{
+        opacity: 0;
+    }
+    .unhidden{
+        opacity: 1;
+        display: block;
+    }
+    @keyframes fadeInText {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+    .logo__img {
+        animation: fadeInImg 3s ease forwards;
+      }
+      
+    @keyframes fadeInImg {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      
+    
+    .logo__text__2{
+        font-weight: 600;
+    }
+    .logo__text__3
+    {
+    font-size: 26px;
+    }
+
+
+    footer{
+        width: 375px;
+        height: 83px; 
+        border-radius: 30px 30px 0px 0px;
+        background-color: #EDEDED;
+        bottom: 0;
+        position: fixed;
+        text-align: center; 
+        padding: 18px; /* Внутренний отступ */
+        
+    }
+    .footer__menu-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 21px;
+
+    }
+    .menu__list-item img {
+        margin-right: 28px;
+    }
+
+
+
+
+    .container{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+       padding-top: 167px;
+        min-height: calc(100vh - 83px);
+    }
+
+    .text__camera-about{
+       
+        font-size: 14px;
+        width: 253px;
+        flex-shrink: 0;
+        height: 26px;
+        margin-bottom: 32px;
+        text-align: center;
+
+    }
+   
+    .qr__code{
+        width: 227px;
+height: 227px;
+border-radius: 15px;
+border: 2px dashed rgba(0, 0, 0, 0.70);
+margin-bottom: 25px;
+    }
+    .qr__code-img{
+        padding: 13px 2px 14px 3px;
+    }
+    .camera__button{
+        width: 222px;
+        height: 40px;
+        text-align: center;
+        border-radius: 15px;
+        border: 2px solid rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color:#000;
+    }
+    border
+    .camera__button-text{
+        font-size: 16px;
+        font-family:  Montserrat;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
