@@ -12,7 +12,7 @@ html {
 }
 
 
-@media (max-width: 775px) {
+@media (max-width: 885px) {
     main{
         display: none;
         opacity: 1;
